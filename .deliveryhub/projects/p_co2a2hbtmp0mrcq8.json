@@ -4,7 +4,7 @@
   "description": "渔渡产品展示官网，包含产品架构图、产品介绍、项目下载",
   "workspacePath": "/Users/mac/beth-new-2025/bb-work-2026/projects/yudu-website",
   "createdAt": "2026-05-11T03:18:35.968Z",
-  "updatedAt": "2026-05-11T05:10:59.100Z",
+  "updatedAt": "2026-05-11T05:12:31.541Z",
   "issues": [
     {
       "id": "i_hm6i1r7ymp0mtx34",
@@ -345,19 +345,26 @@
       "shippedInVersion": "v1.1.1"
     },
     {
-      "id": "i_9rrx0cf1mp0qubpw",
+      "id": "i_nwrrmkvcmp0qvy30",
       "type": "bug",
       "title": "测试tag push",
       "status": "开发完成",
       "parentId": null,
       "detailMd": "",
-      "createdAt": "2026-05-11T05:10:53.396Z",
-      "updatedAt": "2026-05-11T05:10:59.098Z",
+      "createdAt": "2026-05-11T05:12:09.036Z",
+      "updatedAt": "2026-05-11T05:12:31.539Z",
       "attachments": [],
       "severity": "Medium"
     }
   ],
   "documents": [
+    {
+      "id": "d_mp0qv1tw_tq1pxh0r",
+      "category": "rd",
+      "title": "Release notes · v1.1.2",
+      "updatedAt": "2026-05-11T05:11:27.236Z",
+      "bodyMdRelPath": "documents-markdown/p_co2a2hbtmp0mrcq8/d_mp0qv1tw_tq1pxh0r.md"
+    },
     {
       "id": "d_mp0pqgbt_k607xrmv",
       "category": "rd",
@@ -384,14 +391,14 @@
       "category": "product",
       "title": "README入门",
       "bodyMdRelPath": "workspace:README.md",
-      "updatedAt": "2026-05-11T05:10:39.101Z"
+      "updatedAt": "2026-05-11T05:11:43.185Z"
     },
     {
       "id": "d_deliveryhub_dev_log",
       "category": "rd",
       "title": "最新开发日志",
       "createdAt": "2026-05-11T04:11:49.802Z",
-      "updatedAt": "2026-05-11T05:10:59.099Z",
+      "updatedAt": "2026-05-11T05:12:31.540Z",
       "bodyMdRelPath": "documents-markdown/p_co2a2hbtmp0mrcq8/d_deliveryhub_dev_log.md"
     }
   ]
