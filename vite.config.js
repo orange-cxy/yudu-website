@@ -3,5 +3,10 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vue()],
-  server: { port: 3456 }
+  base: '/yudu-website/',
+  server: { port: 3456 },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  },
 })
