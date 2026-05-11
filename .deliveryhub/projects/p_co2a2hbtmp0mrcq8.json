@@ -4,310 +4,354 @@
   "description": "渔渡产品展示官网，包含产品架构图、产品介绍、项目下载",
   "workspacePath": "/Users/mac/beth-new-2025/bb-work-2026/projects/yudu-website",
   "createdAt": "2026-05-11T03:18:35.968Z",
-  "updatedAt": "2026-05-11T04:30:43.962Z",
+  "updatedAt": "2026-05-11T04:39:32.821Z",
   "issues": [
     {
       "id": "i_hm6i1r7ymp0mtx34",
       "type": "requirement",
       "title": "我要实现一个渔渡官网，用来展示渔渡相关的几个产品，需要有产品架构图，产品介绍，项目下载，包含的项目有渔渡交付中枢桌面端、渔渡交付中枢控制端、渔渡学习、渔渡文件管理。",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "整个风格复刻配图UI，注意添加大气的交互体验效果，细节交互也可以参考渔渡FX Gallery项目中的交互\n前端页面使用vue框架\n\n\n---\n**🤖 AI 摘要**：使用Vue框架复刻配图UI，并参考渔渡FX Gallery项目的交互细节，打造大气且富有细节的交互体验效果。\n\n【🤖️】AI总结：使用 Vue 3 + Vite 搭建官网，实现 Hero 区（打字机文字+流光渐变标题）、产品架构图（中心枢纽+四节点连线动画）、四大产品卡片（3D倾斜+悬停光晕+标签）、核心特性网格、下载区、Footer；粒子背景、磁吸按钮、导航下划线展开、滚动显现等 FX Gallery 风格交互效果。",
       "createdAt": "2026-05-11T03:18:35.968Z",
-      "updatedAt": "2026-05-11T04:14:31.365Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P2"
+      "priority": "P2",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_my8u8vbmmp0ottdo",
       "type": "requirement",
       "title": "当前项目部署在github上，添加release指令，自动打包部署到github上进行在线预览",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "【🤖️】AI总结：安装 gh-pages 依赖，vite.config.js 设置 base 为 /yudu-website/，package.json 添加 release 脚本（npm run build && gh-pages -d dist），执行后自动构建并推送到 gh-pages 分支，GitHub Pages 即可在 https://orange-cxy.github.io/yudu-website/ 在线预览。",
       "createdAt": "2026-05-11T04:14:30.396Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P2"
+      "priority": "P2",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_5w5mzr0gmp0p7ce6",
       "type": "requirement",
       "title": "全局：项目基础架构与构建配置",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n搭建基于 Vue 3 + Vite 的项目基础架构，包含路由、构建配置、静态资源管理。\n\n## 验收标准\n- 使用 Vue 3 Composition API 与 `<script setup>` 语法\n- Vite 构建配置正确，支持开发与生产环境\n- 集成 vue-router 4，定义基本路由结构\n- 静态资源（图片、SVG）可正常引用\n- 支持 gh-pages 部署\n\n## AI 技术方案\n- 使用 Vite 默认配置，通过 `vite.config.js` 自定义\n- 路由采用 `createRouter` 与 `createWebHistory` 或 `createWebHashHistory`（根据部署需要）\n- 组件使用 SFC 模式，样式采用全局 CSS 与 scoped 样式结合",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P0"
+      "priority": "P0",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_fxph8m29mp0p7ce6",
       "type": "requirement",
       "title": "全局：全局样式与主题系统",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n定义全局 CSS 变量、字体、颜色、间距等设计令牌，确保全站视觉一致性。\n\n## 验收标准\n- 在 `src/style.css` 中定义 CSS 自定义属性（如 `--color-primary`, `--font-family`）\n- 支持响应式断点\n- 基础重置样式（normalize）\n- 全局字体加载（如系统字体或 Google Fonts）\n\n## AI 技术方案\n- 使用 CSS 自定义属性实现主题变量\n- 在 `style.css` 中通过 `@media` 实现响应式\n- 字体使用系统字体栈，减少外部依赖",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P1"
+      "priority": "P1",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_in4iuuftmp0p7ce6",
       "type": "requirement",
       "title": "全局：路由系统与页面骨架",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n实现基于 vue-router 4 的路由系统，定义主路由（首页、关于、产品、案例、联系等），并创建对应的页面组件骨架。\n\n## 验收标准\n- 路由配置集中管理（`src/router/index.js`）\n- 每个路由对应一个页面组件（`src/views/` 下）\n- 支持懒加载\n- 404 页面处理\n- 导航守卫（如页面标题更新）\n\n## AI 技术方案\n- 使用 `defineAsyncComponent` 或动态 `import()` 实现懒加载\n- 路由元信息（meta）用于页面标题\n- 全局 `beforeEach` 守卫设置 `document.title`",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P0"
+      "priority": "P0",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_rfuzve7jmp0p7ce6",
       "type": "requirement",
       "title": "首页（/）",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n渔渡官网首页，展示品牌形象、核心价值、最新动态与行动号召。\n\n## 验收标准\n- 顶部导航栏（Logo + 菜单）\n- Hero 区域：品牌标语、背景图（`hero.png`）、CTA 按钮\n- 核心优势/服务简介区域（3-4 个卡片）\n- 最新动态或案例展示区域\n- 底部联系/行动号召区域\n- 响应式布局\n\n## AI 技术方案\n- 使用 Flexbox/Grid 布局\n- Hero 区域使用 `background-image` 与 `object-fit` 处理图片\n- 卡片组件可复用",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P0"
+      "priority": "P0",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_uvpvi4j6mp0p7ce6",
       "type": "feature",
       "title": "首页：导航栏组件",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n实现全站统一的顶部导航栏，包含 Logo、菜单项、移动端汉堡菜单。\n\n## 验收标准\n- 固定在页面顶部\n- 菜单项：首页、关于我们、产品服务、案例、联系我们\n- 当前路由高亮\n- 移动端折叠为汉堡菜单\n- 点击菜单项平滑滚动或跳转\n\n## AI 技术方案\n- 使用 `router-link` 实现导航\n- 通过 `useRoute` 获取当前路径设置 active 类\n- 移动端使用 CSS 媒体查询与 JavaScript 切换显示",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P0"
+      "priority": "P0",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_zwx5gvd1mp0p7ce6",
       "type": "feature",
       "title": "首页：Hero 区域",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n首页首屏大图区域，展示品牌标语与核心行动号召。\n\n## 验收标准\n- 全宽背景图（`hero.png`）\n- 居中显示品牌标语（h1）\n- 副标题或简短描述\n- 一个主要 CTA 按钮（如“了解更多”或“联系我们”）\n- 背景图适配不同屏幕\n\n## AI 技术方案\n- 使用 `background-size: cover` 与 `background-position: center`\n- 文字使用 `text-shadow` 提升可读性\n- CTA 按钮使用 `router-link` 或 `a` 标签",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P0"
+      "priority": "P0",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_0xcgrkiwmp0p7ce6",
       "type": "feature",
       "title": "首页：核心优势卡片区域",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n展示渔渡的核心服务或优势，以卡片网格形式呈现。\n\n## 验收标准\n- 3-4 个卡片，每个包含图标、标题、简短描述\n- 卡片等高等宽，响应式排列（桌面 4 列，平板 2 列，手机 1 列）\n- 鼠标悬停有轻微动画效果\n\n## AI 技术方案\n- 使用 CSS Grid 布局\n- 图标可使用 SVG 或字体图标\n- 动画使用 `transition` 实现",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P1"
+      "priority": "P1",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_blkpwaoxmp0p7ce6",
       "type": "feature",
       "title": "首页：最新动态/案例展示区域",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n展示最新项目案例或公司动态，吸引访客深入了解。\n\n## 验收标准\n- 显示 3 个最新案例/动态的缩略图、标题、摘要\n- 点击可跳转到案例详情或外部链接\n- 响应式布局\n\n## AI 技术方案\n- 数据可先使用静态 JSON 模拟\n- 使用 `v-for` 渲染列表\n- 链接使用 `router-link` 或 `a` 标签",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P1"
+      "priority": "P1",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_5s7fppbemp0p7ce6",
       "type": "feature",
       "title": "首页：底部联系/行动号召区域",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n首页底部区域，提供联系信息或引导用户采取行动。\n\n## 验收标准\n- 包含联系信息（电话、邮箱、地址）\n- 一个突出的 CTA 按钮（如“立即咨询”）\n- 背景色与 Hero 区域形成对比\n\n## AI 技术方案\n- 使用 flex 布局居中内容\n- CTA 按钮样式与 Hero 区域一致",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P1"
+      "priority": "P1",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_cve2v144mp0p7ce6",
       "type": "requirement",
       "title": "关于我们（/about）",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n介绍渔渡的公司背景、团队、使命愿景。\n\n## 验收标准\n- 公司简介段落\n- 团队介绍（可选，可预留位置）\n- 使命、愿景、价值观\n- 发展历程或里程碑时间线\n- 响应式布局\n\n## AI 技术方案\n- 使用语义化 HTML 标签\n- 时间线可使用 CSS 伪元素实现",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P1"
+      "priority": "P1",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_imp6cma7mp0p7ce6",
       "type": "feature",
       "title": "关于我们：公司简介与使命愿景",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n展示公司简介、使命、愿景、价值观。\n\n## 验收标准\n- 简介段落清晰\n- 使命、愿景、价值观以卡片或列表形式呈现\n- 视觉层次分明\n\n## AI 技术方案\n- 使用 `section` 标签分隔不同内容块\n- 卡片样式与首页一致",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P1"
+      "priority": "P1",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_qhaf3ywhmp0p7ce6",
       "type": "feature",
       "title": "关于我们：发展历程时间线",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n以时间线形式展示公司发展里程碑。\n\n## 验收标准\n- 时间线垂直排列，左侧为年份，右侧为事件描述\n- 响应式：移动端可改为左右交替或单列\n- 可添加动画（如滚动进入视图）\n\n## AI 技术方案\n- 使用 `::before` 伪元素绘制竖线\n- 使用 `IntersectionObserver` 实现滚动动画",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P2"
+      "priority": "P2",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_3m3psrobmp0p7ce6",
       "type": "requirement",
       "title": "产品服务（/services）",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n展示渔渡提供的产品与服务详情。\n\n## 验收标准\n- 服务列表（每个服务一个卡片或区块）\n- 每个服务包含图标、标题、详细描述、可能的价格或案例链接\n- 响应式网格布局\n\n## AI 技术方案\n- 数据驱动渲染，便于后期接入 CMS\n- 卡片可复用首页的样式",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P0"
+      "priority": "P0",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_k74r458smp0p7ce6",
       "type": "feature",
       "title": "产品服务：服务卡片列表",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n以卡片网格展示所有服务项目。\n\n## 验收标准\n- 每个卡片包含图标、标题、简短描述\n- 点击卡片可展开更多详情或跳转到单独页面\n- 响应式排列\n\n## AI 技术方案\n- 使用 `v-for` 渲染服务数据\n- 展开详情可使用 `v-if` 或模态框",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P0"
+      "priority": "P0",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_txqefgbvmp0p7ce6",
       "type": "feature",
       "title": "产品服务：服务详情页（可选）",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n为每个服务提供独立的详情页面，展示完整信息。\n\n## 验收标准\n- 动态路由 `/services/:id`\n- 包含服务名称、描述、案例、联系方式\n- 面包屑导航\n\n## AI 技术方案\n- 使用 `useRoute` 获取参数\n- 数据可从静态文件或 API 获取",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P2"
+      "priority": "P2",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_nuxyf1nwmp0p7ce6",
       "type": "requirement",
       "title": "案例展示（/cases）",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n展示渔渡的成功案例，增强信任感。\n\n## 验收标准\n- 案例列表（网格或列表视图）\n- 每个案例包含缩略图、标题、客户名称、简要成果\n- 点击可查看案例详情\n- 筛选或搜索功能（可选）\n\n## AI 技术方案\n- 使用 `v-for` 渲染案例数据\n- 筛选可使用计算属性",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P1"
+      "priority": "P1",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_jz8yw1kkmp0p7ce6",
       "type": "feature",
       "title": "案例展示：案例卡片列表",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n以卡片网格展示所有案例。\n\n## 验收标准\n- 每个卡片包含缩略图、标题、客户名称、成果摘要\n- 鼠标悬停有放大或遮罩效果\n- 响应式布局\n\n## AI 技术方案\n- 使用 CSS `transform` 实现悬停效果\n- 图片使用 `object-fit: cover`",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P1"
+      "priority": "P1",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_x4lrgu06mp0p7ce6",
       "type": "feature",
       "title": "案例展示：案例详情页",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n为每个案例提供详情页面，展示完整故事。\n\n## 验收标准\n- 动态路由 `/cases/:id`\n- 包含大图、客户背景、挑战、解决方案、成果数据\n- 相关案例推荐\n- 面包屑导航\n\n## AI 技术方案\n- 使用 `useRoute` 获取参数\n- 数据可从静态文件或 API 获取",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P1"
+      "priority": "P1",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_s0lvzs97mp0p7ce6",
       "type": "requirement",
       "title": "联系我们（/contact）",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n提供联系表单与公司联系方式。\n\n## 验收标准\n- 联系表单（姓名、邮箱、电话、留言）\n- 表单验证\n- 提交后显示成功提示（模拟）\n- 公司地址、电话、邮箱、地图（可选）\n- 响应式布局\n\n## AI 技术方案\n- 使用 `v-model` 双向绑定表单数据\n- 验证可使用自定义规则或库（如 VeeValidate）\n- 提交使用 `fetch` 或模拟",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P0"
+      "priority": "P0",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_lvtm4s3omp0p7ce6",
       "type": "feature",
       "title": "联系我们：联系表单",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n实现联系表单，包含字段验证与提交反馈。\n\n## 验收标准\n- 字段：姓名（必填）、邮箱（必填，格式验证）、电话（可选）、留言（必填）\n- 实时验证提示\n- 提交后显示“提交成功”或“提交失败”\n- 表单重置\n\n## AI 技术方案\n- 使用 `watch` 或计算属性进行实时验证\n- 提交使用 `async/await` 模拟 API 调用",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P0"
+      "priority": "P0",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_xrqnpcj4mp0p7ce6",
       "type": "feature",
       "title": "联系我们：联系信息与地图",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n展示公司地址、电话、邮箱，并嵌入地图（可选）。\n\n## 验收标准\n- 地址、电话、邮箱以图标+文字形式展示\n- 点击电话/邮箱可触发拨号/发邮件\n- 地图可使用 iframe 嵌入（如高德/百度）\n\n## AI 技术方案\n- 使用 `tel:` 和 `mailto:` 链接\n- 地图 iframe 可放在 `v-if` 中按需加载",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P1"
+      "priority": "P1",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_46fv5s1ymp0p7ce6",
       "type": "requirement",
       "title": "全局：页脚组件",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n全站统一的页脚，包含版权信息、友情链接、社交图标。\n\n## 验收标准\n- 版权声明（© 渔渡）\n- 快速链接（首页、关于、服务、案例、联系）\n- 社交图标（如微信、微博、LinkedIn）\n- 响应式布局\n\n## AI 技术方案\n- 使用 flex 布局\n- 社交图标使用 SVG 或字体图标",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P1"
+      "priority": "P1",
+      "shippedInVersion": "v1.1.0"
     },
     {
       "id": "i_xx1eh256mp0p7ce6",
       "type": "requirement",
       "title": "全局：404 页面",
-      "status": "开发完成",
+      "status": "上线",
       "parentId": null,
       "detailMd": "## 需求描述\n当用户访问不存在的路由时，显示友好的 404 页面。\n\n## 验收标准\n- 显示“页面未找到”提示\n- 提供返回首页的链接\n- 与网站整体风格一致\n\n## AI 技术方案\n- 在路由配置中添加 `path: '/:pathMatch(.*)*'` 捕获所有未匹配路由\n- 组件内容简单明了",
       "createdAt": "2026-05-11T04:25:01.565Z",
-      "updatedAt": "2026-05-11T04:30:43.961Z",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
       "attachments": [],
-      "priority": "P2"
+      "priority": "P2",
+      "shippedInVersion": "v1.1.0"
+    },
+    {
+      "id": "i_yi4ct23smp0ppjm7",
+      "type": "bug",
+      "title": "添加预览项目脚本",
+      "status": "开发完成",
+      "parentId": null,
+      "detailMd": "",
+      "createdAt": "2026-05-11T04:39:10.735Z",
+      "updatedAt": "2026-05-11T04:39:32.819Z",
+      "attachments": [],
+      "severity": "Medium"
     }
   ],
   "documents": [
+    {
+      "id": "d_mp0pfgbg_6gwt9kwo",
+      "category": "rd",
+      "title": "Release notes · v1.1.0",
+      "updatedAt": "2026-05-11T04:31:19.900Z",
+      "bodyMdRelPath": "documents-markdown/p_co2a2hbtmp0mrcq8/d_mp0pfgbg_6gwt9kwo.md"
+    },
     {
       "id": "d_mp0p7ce6_9akqjn9y",
       "category": "product",
@@ -320,14 +364,14 @@
       "category": "product",
       "title": "README入门",
       "bodyMdRelPath": "workspace:README.md",
-      "updatedAt": "2026-05-11T04:30:36.890Z"
+      "updatedAt": "2026-05-11T04:38:16.621Z"
     },
     {
       "id": "d_deliveryhub_dev_log",
       "category": "rd",
       "title": "最新开发日志",
       "createdAt": "2026-05-11T04:11:49.802Z",
-      "updatedAt": "2026-05-11T04:30:43.962Z",
+      "updatedAt": "2026-05-11T04:39:32.819Z",
       "bodyMdRelPath": "documents-markdown/p_co2a2hbtmp0mrcq8/d_deliveryhub_dev_log.md"
     }
   ]

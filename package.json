@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
+    "open": "open -a \"Google Chrome 2\" http://localhost:3456/yudu-website/",
     "build": "vite build",
     "preview": "vite preview",
     "release": "npm run build && gh-pages -d dist",
