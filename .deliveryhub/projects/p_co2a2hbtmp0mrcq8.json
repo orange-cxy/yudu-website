@@ -1,0 +1,30 @@
+{
+  "id": "p_co2a2hbtmp0mrcq8",
+  "name": "渔渡官网",
+  "description": "渔渡产品展示官网，包含产品架构图、产品介绍、项目下载",
+  "workspacePath": "/Users/mac/beth-new-2025/bb-work-2026/projects/yudu-website",
+  "createdAt": "2026-05-11T03:18:35.968Z",
+  "updatedAt": "2026-05-11T04:00:00.000Z",
+  "issues": [
+    {
+      "id": "i_hm6i1r7ymp0mtx34",
+      "type": "requirement",
+      "title": "我要实现一个渔渡官网，用来展示渔渡相关的几个产品，需要有产品架构图，产品介绍，项目下载，包含的项目有渔渡交付中枢桌面端、渔渡交付中枢控制端、渔渡学习、渔渡文件管理。",
+      "status": "AI开发",
+      "parentId": null,
+      "detailMd": "整个风格复刻配图UI，注意添加大气的交互体验效果，细节交互也可以参考渔渡FX Gallery项目中的交互\n前端页面使用vue框架\n\n\n---\n**🤖 AI 摘要**：使用Vue框架复刻配图UI，并参考渔渡FX Gallery项目的交互细节，打造大气且富有细节的交互体验效果。\n\n【🤖️】AI总结：使用 Vue 3 + Vite 搭建官网，实现 Hero 区（打字机文字+流光渐变标题）、产品架构图（中心枢纽+四节点连线动画）、四大产品卡片（3D倾斜+悬停光晕+标签）、核心特性网格、下载区、Footer；粒子背景、磁吸按钮、导航下划线展开、滚动显现等 FX Gallery 风格交互效果。",
+      "createdAt": "2026-05-11T03:18:35.968Z",
+      "updatedAt": "2026-05-11T04:00:00.000Z",
+      "attachments": [
+        {
+          "id": "a_s7xhv9yfmp0mtx4x",
+          "fileName": "City_Guide_-_Kyoto_1x.png",
+          "storedName": "mp0mtx4v_City_Guide_-_Kyoto_1x.png",
+          "relPath": "attachments/p_co2a2hbtmp0mrcq8/i_hm6i1r7ymp0mtx34/mp0mtx4v_City_Guide_-_Kyoto_1x.png"
+        }
+      ],
+      "priority": "P2"
+    }
+  ],
+  "documents": []
+}
